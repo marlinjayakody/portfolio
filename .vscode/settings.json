@@ -1,0 +1,5 @@
+{
+    "nunjucksFormat.tagsort": true,
+    "nunjucksFormat.style": true,
+    "nunjucksFormat.tagmerge": true
+}
