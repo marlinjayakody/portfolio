@@ -4,11 +4,11 @@ layout: layout.njk
 pagination:
   data: collections.post
   size: 6
-  reverse: true
+  reverse: false
   alias: posts
 ---
      <section class=" text-gray-700 body-font">
-     <h1 class="text-5xl text-center">Welcome to our blog</h1>
+    
             <div class="container px-8 pt-24 mx-auto lg:px-4 ">
                 <div class="flex flex-wrap text-left">
                    {% for post in posts %}
@@ -32,3 +32,6 @@ pagination:
             </div>
         </section>
 
+<div class="test">
+    this is my home page 
+</div>

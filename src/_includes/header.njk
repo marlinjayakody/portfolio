@@ -1,17 +1,71 @@
- <header class="bg-warmgray50 container-fluid px-10 py-4 text-gray-700 body-font">
-<div class="mj-main-header flex flex-row justify-between items-center">
-    <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
-<div class="mj-main-header-links">
-    <a href="" class="font-main text-lg tracking-wide">Download Resume</a>
-    
-    <a href="" role="button" class="rounded-full py-3 px-6 bg-warmgray-800 font-main tracking-wider text-lg text-white ml-8 hover:bg-warmgray-700 transition duration-300">Lets Connect</a>
-</div>
-</div>
-            <div class="container-fluid flex flex-col flex-wrap px-10 py-4 mx-auto md:items-center md:flex-row border-b-2 border-warmgray-900 ">
-                <nav class="flex flex-wrap items-center justify-center text-base">
-                    <a href="/" class="mr-14 text-md font-semibold hover:text-gray-800 uppercase">Home</a>
-                    <a href="/contact" class="mr-14 text-md font-semibold hover:text-gray-800 uppercase">Contact</a>
-                    <a href="/about" class="mr-0 text-md font-semibold  hover:text-gray-800 uppercase">About</a>
-                </nav>
-            </div>
-        </header>
+ <header class="bg-warmgray50 container-fluid px-14 text-gray-700 body-font hidden md:block">
+     <div class="mj-main-header flex flex-row justify-between items-center">
+         <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
+         <div class="mj-main-header-links">
+             <a href="" class="font-main text-lg tracking-wide">Download Resume</a>
+
+             <a href="/contact" role="button"
+                 class="rounded-full py-3 px-6 bg-warmgray-800 font-main tracking-wider text-lg text-white ml-8 hover:bg-warmgray-700 transition duration-300">Lets
+                 Connect</a>
+         </div>
+     </div>
+     <div
+         class="container-fluid flex flex-col flex-wrap px-10 py-4 mx-auto md:items-center md:flex-row border-b-2 border-warmgray-900 ">
+         <nav class="flex flex-wrap items-center justify-center text-base">
+             <ul id="nav2" class="inline-flex">
+                 <li class="block"><a href="/"
+                         class="mr-14 text-md text-warmgray-700 font-semibold hover:text-gray-900 uppercase">Home</a>
+                 </li>
+                 <li class="block"><a href="/blog/my-first-blog/"
+                         class="mr-14 text-warmgray-700 text-md font-semibold hover:text-gray-900 uppercase">Blog</a>
+                 </li>
+                 <li class="block"><a href="/about"
+                         class="mr-0 text-md text-warmgray-700 font-semibold hover:text-gray-900 uppercase">About</a>
+                 </li>
+             </ul>
+         </nav>
+     </div>
+ </header>
+
+ <!-- Mobile Menue -->
+
+ <div x-data="{ menu: false }" class="relative right-0 top-0 md:hidden">
+     <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
+     <button @click="menu = !menu"
+         class="z-20 fixed right-2 top-2 px-4 py-4 bg-warmgray-800 transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none">
+         <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+             <path x-show="!menu" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                 d="M4 6h16M4 12h16M4 18h7" />
+             <path x-show="menu" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                 d="M6 18L18 6M6 6l12 12" />
+         </svg>
+     </button>
+
+     <ul x-show.transition.duration.500ms="menu" @click.away="menu = false"
+         class="flex flex-col w-full h-full top-0 bg-warmgray-200 text-gray-400 text-let z-10 fixed sm:px-3 sm:py-2  md:px-8 md:py-4 overflow-y-auto"
+         style="display: none;">
+         <li @click="menu = !menu" class="px-4 py-4 mb-1 mx-1">
+             <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
+         </li>
+         <li class="text-2xl text-warmgray-800 font-semibold py-6 uppercase"><a href="/"
+                 class="px-8 hover:text-warmgray-800 ">Home</a></li>
+         <li class="text-2xl text-warmgray-800 font-semibold pt-6 pb-3 uppercase"><a href="/blog/my-first-blog/"
+                 class="px-8 hover:text-warmgray-800 ">Blog</a></li>
+         <ul class="pl-7">
+             {% for post in collections.post %}
+             <li class=" "><a href="{{ post.url }}"
+                     class="text-lg px-4 py-2 w-100 block text-warmgray-800 rounded transition duration-300">{{ post.data.title }}</a>
+             </li>
+             {% endfor %}
+         </ul>
+         <li class="text-2xl text-warmgray-800 font-semibold py-6 uppercase"><a href="/contact"
+                 class="px-8 hover:text-warmgray-800 ">About</a></li>
+         <li class="text-2xl text-warmgray-800 font-semibold py-6 uppercase"><a href="/contact"
+                 class="px-8 hover:text-warmgray-800 ">Download Resume</a></li>
+         <li class="text-2xl text-warmgray-800 font-semibold py-6ß uppercase"><a href="/contact"
+                 class="px-8 hover:text-warmgray-800 ">Lets Connect</a></li>
+
+
+     </ul>
+
+ </div>

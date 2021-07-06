@@ -1,7 +1,7 @@
 ---
-title: My Second blog
+title: My third blog
 layout: post.njk
-featuredImage: ./islands.jpg
+featuredImage: ./islands2.jpg
 pageTitle: This is my other Title
 tags: ["post"]
 ---

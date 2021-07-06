@@ -1,10 +1,13 @@
 ---
-title: My First blog
+title: ලෝරීම් ඉප්සම් යනු සරලව
 layout: post.njk
 featuredImage: ./doggo.jpg
 pageTitle: This is my other Title
 tags: ["post"]
 ---
+ලෝරීම් ඉප්සම් යනු සරලව මුද්‍රණ හා අකුරු ඇමිනුම් කර්මාන්තයේ උදාහරණ අකුරු පෙළ වෙයි. 1500 ගණන්වල සිට මේ දක්වා ලෝරම් ඉප්සම් කර්මාන්තයේ සම්මත අකුරු පෙළ ලෙස භාවිතා වන්නට පටන් ගත්තේ නාඳුනන මුද්රණ ශිල්පියෙකු යම් අකපුරු මිශ්‍රණයක් රැගෙන ඒවායෙන් අකුරු ආදර්ශ පොතක් සෑදීමට ගත් පසුවය . එය ශතවර්ශ පහක් පමණ නොවී පැමිණ ඉලෙක්ට්‍රොනික යුගයටද පිවිසුණි . 1960 දී ලෝරම් ඉප්සම් කොටස් අඩංගු ලෙට්‍රාසෙට් තහඩු නිදහස් කිරීමත් සමඟ ජනප්‍රිය වන්නට පටන් ගෙන මෑතකදී පේජ් මේකර් වැනි මෘදුකාංග සමඟ ද පැමිණීම නිසා ලෝක ප්‍රසිද්ධියට පත්විය.
+
+
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dictum felis eu pede mollis pretium. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
 
