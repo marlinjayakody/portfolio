@@ -1,9 +1,9 @@
- <header class="bg-warmgray50 container-fluid px-14 text-gray-700 body-font hidden md:block">
+ <header class="bg-warmgray50 container-fluid px-14 text-gray-700 body-font hidden lg:block">
      <div class="mj-main-header flex flex-row justify-between items-center">
          <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
          <div class="mj-main-header-links">
-             <a href="" class="font-main text-lg tracking-wide">Download Resume</a>
-
+            <i class="ph-download-simple align-middle ph-lg"></i>  <a href="" class="font-main text-lg tracking-wide"> Download Resume</a>
+        
              <a href="/contact" role="button"
                  class="rounded-full py-3 px-6 bg-warmgray-800 font-main tracking-wider text-lg text-white ml-8 hover:bg-warmgray-700 transition duration-300">Lets
                  Connect</a>
@@ -29,7 +29,7 @@
 
  <!-- Mobile Menue -->
 
- <div x-data="{ menu: false }" class="relative right-0 top-0 md:hidden">
+ <div x-data="{ menu: false }" class="relative right-0 top-0 lg:hidden">
      <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
      <button @click="menu = !menu"
          class="z-20 fixed right-2 top-2 px-4 py-4 bg-warmgray-800 transform duration-500 ease-in-out md:hover:scale-110 motion-reduce:transform-none text-white m-2 focus:outline-none">
@@ -47,22 +47,22 @@
          <li @click="menu = !menu" class="px-4 py-4 mb-1 mx-1">
              <div class="logo"><img src="/assets/mjlogo.svg" alt="marlin jayakody logo"></div>
          </li>
-         <li class="text-2xl text-warmgray-800 font-semibold py-6 uppercase"><a href="/"
+         <li class="text-2xl text-warmgray-800 font-semibold pt-6 b pb-3 uppercase"><a href="/"
                  class="px-8 hover:text-warmgray-800 ">Home</a></li>
-         <li class="text-2xl text-warmgray-800 font-semibold pt-6 pb-3 uppercase"><a href="/blog/my-first-blog/"
+         <li class="text-2xl text-warmgray-800 font-semibold pt-3 pb-1 uppercase"><a href="/blog/my-first-blog/"
                  class="px-8 hover:text-warmgray-800 ">Blog</a></li>
          <ul class="pl-7">
              {% for post in collections.post %}
              <li class=" "><a href="{{ post.url }}"
-                     class="text-lg px-4 py-2 w-100 block text-warmgray-800 rounded transition duration-300">{{ post.data.title }}</a>
+                     class="text-lg px-4 py-2 w-100 block text-warmgray-800 rounded transition duration-300 font-mono">{{ post.data.title }}</a>
              </li>
              {% endfor %}
          </ul>
-         <li class="text-2xl text-warmgray-800 font-semibold py-6 uppercase"><a href="/contact"
+         <li class="text-2xl text-warmgray-800 font-semibold py-3 uppercase"><a href="/contact"
                  class="px-8 hover:text-warmgray-800 ">About</a></li>
-         <li class="text-2xl text-warmgray-800 font-semibold py-6 uppercase"><a href="/contact"
+         <li class="text-2xl text-warmgray-800 font-semibold py-3 uppercase"><a href="/contact"
                  class="px-8 hover:text-warmgray-800 ">Download Resume</a></li>
-         <li class="text-2xl text-warmgray-800 font-semibold py-6ß uppercase"><a href="/contact"
+         <li class="text-2xl text-warmgray-800 font-semibold py-3 uppercase"><a href="/contact"
                  class="px-8 hover:text-warmgray-800 ">Lets Connect</a></li>
 
 
