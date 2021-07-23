@@ -52,13 +52,13 @@
          <li class="text-2xl text-warmgray-800 font-semibold pt-3 pb-1 uppercase"><a href="/blog/my-first-blog/"
                  class="px-8 hover:text-warmgray-800 ">Blog</a></li>
          <ul class="pl-7">
-             {% for post in collections.post %}
+             {% for post in collections.sinhala %}
              <li class=" "><a href="{{ post.url }}"
                      class="text-lg px-4 py-2 w-100 block text-warmgray-800 rounded transition duration-300 font-mono">{{ post.data.title }}</a>
              </li>
              {% endfor %}
          </ul>
-         <li class="text-2xl text-warmgray-800 font-semibold py-3 uppercase"><a href="/contact"
+         <li class="text-2xl text-warmgray-800 font-semibold py-3 uppercase"><a href="/about/"
                  class="px-8 hover:text-warmgray-800 ">About</a></li>
          <li class="text-2xl text-warmgray-800 font-semibold py-3 uppercase"><a href="/contact"
                  class="px-8 hover:text-warmgray-800 ">Download Resume</a></li>
