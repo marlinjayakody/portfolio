@@ -20,12 +20,12 @@
   <title>{{ title }}</title>
   {% block head %}{% endblock %}
 </head>
-<body class="bg-primary">
-<!-- {% include 'header.njk' %} -->
-<main class="flex-grow">
+<body class="flex flex-col min-h-screen bg-primary">
+{% include 'header.njk' %}
+<main class=" flex-grow">
  {{ content | safe }}
  </main>
-<!-- {% include 'footer.njk' %}-->
+{% include 'footer.njk' %}  
 
 
 
